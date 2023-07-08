@@ -1,71 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>L!sandro HR</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
-  <body>
+  <script src="https://unpkg.com/unfetch/dist/unfetch.umd.js"></script>
+<head>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> g
+  <title>Registro de Actividades Diarias</title>
+  <script src="script1.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
     <div id="header">
-      <div class="container">
-        <a id="header-title" href="index.html">L!sandro HR</a>
-        <ul id="header-nav">
-          <li><a href="about.html">About</a></li>
-          <li><a href="mailto:itslisandrohr@gmail.com">Contact</a></li>
-        </ul>
-      </div>
+    <h1>Registro de Actividades Diarias</h1>
     </div>
-    <div id="content">
-      <div class="post-container">
-        <div class="post">
-          <div class="post-author">
-            <img src="me.png.png"width="100" height="100">
-            <span>Me</span>
-          </div>
-          <p class="post-date">Today</p>
-          <h3 class="post-title">Becoming a web developer</h3>
-          <div class="post-content">
-            <p><em>If somebody would have told me a week a go that I would be able
-              to make a website</em>, I would not have believed them</p>
-            <p>Just a few later, I came across <a href="https://getmimo.com/">Mimo</a> and started to work on
-            <strong>a real blog</strong></p>
-          </div>
-        </div>
-        <div class="post-container">
-        <div class="post">
-          <div class="post-author">
-            <img src="me.png.png" width="100" height="100">
-            <span>Me</span>
-          </div>
-          <p class="post-date">Yesterday</p>
-          <h3 class="post-title">Becoming a web developer</h3>
-          <div class="post-content">
-            <p><em>If somebody would have told me a week a go that I would be able
-              to make a website</em>, I would not have believed them</p>
-            <p>Just a few later, I came across <a href="https://getmimo.com/">Mimo</a> and started to work on
-            <strong>a real blog</strong></p>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-    <div id="footer">
-      <div class="container">
+    <br>
+  <form id="activityForm">
+    <label for="activity">Actividad:</label>
+    <input type="text" id="activity" required>
+    <label for="time">Hora y Minuto:</label>
+    <input type="time" id="time" required>
+    <label for="date">Fecha:</label>
+    <input type="date" id="date" required>
+    <button type="submit">Agregar</button>
+  </form>
 
-        <div class="column">
-          <h4>My Links</h4>
-          <p>
-            <a href="https://www.instagram.com/lisandrohr/">Instagram</a>
-            <br>
-            <a href="https://wa.link/veyucj">WhatsApp</a>
-          </p>
-        </div>
-
-        <div class="column">
-          <h4>•Diseño gráfico & Fotografía•</h4>
-          <p>Identidad visual, logo, creación de marca, diseño corporativo, sesión fotográfica.</p>
-
-        </div>
-      </div>
-    </div>
-  </body>
+  <h2>Actividades</h2>
+  <ul id="activityList"></ul>
+</body>
 </html>
